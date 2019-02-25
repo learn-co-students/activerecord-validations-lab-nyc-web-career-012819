@@ -8,7 +8,7 @@ class Post < ActiveRecord::Base
   validate :clickbait
   def clickbait
     # binding.pry
-    self.title =~ /Won't Believe/ || /Secret/ || /Top[number]/ || /Guess/ ? true : errors.add(:title, "Not clickbait")
+    title =~ /Won't Believe/ || /Secret/ || /Top[number]/ || /Guess/ ? true : errors.add(:title, "Not clickbait")
   end
 
 end
