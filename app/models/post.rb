@@ -7,7 +7,7 @@ class Post < ActiveRecord::Base
 
 CLICKBAIT_PHRASES = [
   /Secret/i,
-  /Top [0-9]*/i,
+  /Top [0-9]/i,
   /Guess/i,
   /You Won't/i
 ]
